@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(30, 10%, 34%);
+  min-height: 100vh;
+}
+
+.recipe_card {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.imgOmelette {
+  width: 100%;
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.recipe_title {
+  font-family: "Young Serif", sans-serif;
+  font-size: 2.15rem;
+  margin: 15px 0;
+  color: hsl(24, 5%, 18%);
+}
+
+.recipe_description {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0 0;
+}
+
+/** Prep time  */
+.recipe_prepTime_card {
+  /* border: 1px solid black; */
+  width: 60%;
+  padding: 10px 10px 10px 23px;
+  margin: 25px 0 15px 0;
+  font-family: "Outfit", sans-serif;
+}
+
+.recipe_prepTime_card p,
+.recipe_prepTime_card ul {
+  margin: 0 0;
+  padding: 0;
+}
+
+.recipe_prepTime_card p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 10px;
+}
+
+.recipe_prepTime_card ul {
+  font-size: 0.9rem;
+  margin-left: 24px;
+  list-style-position: outside;
+}
+
+.recipe_prepTime_card ul li {
+  padding-left: 16px;
+  margin-bottom: 5px;
+}
+
+.recipe_prepTime_card ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.recipe_prepTime_card ul li span {
+  font-weight: 600;
+}
+
+/** Ingredients */
+.recipe_ingredients_card {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  width: 100%;
+  padding: 10px;
+}
+
+.recipe_ingredients_card p,
+.recipe_ingredients_card ul {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe_ingredients_card p {
+  font-family: "Young Serif", sans-serif;
+  font-size: 1.5rem;
+  color: hsl(14, 45%, 36%);
+  margin: 0 0 15px 0;
+}
+
+.recipe_ingredients_card ul {
+  margin-left: 20px;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9rem;
+}
+
+.recipe_ingredients_card ul li {
+  padding-left: 12px;
+  margin-bottom: 5px;
+}
+
+.recipe_ingredients_card ul li:last-child {
+  margin-bottom: 15px;
+}
+
+.recipe_ingredients_card ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+/** Instructions */
+.recipe_instructions_card {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 10px;
+  width: 100%;
+}
+
+.recipe_instructions_card p,
+.recipe_instructions_card ol {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe_instructions_card p {
+  font-family: "Young Serif", sans-serif;
+  font-size: 1.5rem;
+  color: hsl(14, 45%, 36%);
+  margin: 10px 0 15px 0;
+}
+
+.recipe_instructions_card ol {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.8rem;
+  margin-left: 21px;
+}
+
+.recipe_instructions_card ol li {
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+.recipe_instructions_card ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.recipe_instructions_card ol li:last-child {
+  margin-bottom: 15px;
+}
+
+.recipe_instructions_card ol li span {
+  font-weight: 600;
+}
+
+/** Nutrition */
+.recipe_nutrition_card {
+  padding: 10px;
+}
+
+.recipe_nutrition_card .recipe_nutrition_title,
+.recipe_nutrition_card .recipe_nutrition_description {
+  margin: 0;
+}
+
+.recipe_nutrition_card .recipe_nutrition_title {
+  font-family: "Young Serif", sans-serif;
+  font-size: 1.6rem;
+  color: hsl(14, 45%, 36%);
+  margin: 10px 0 10px 0;
+}
+
+.recipe_nutrition_title + p,
+.recipe_nutrition_title ~ div span {
+  font-family: "Outfit", sans-serif;
+}
+
+.recipe_nutrition_card .recipe_nutrition_description {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.recipe_nutrition_label {
+  font-size: 0.85rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 5px 0;
+  padding: 10px 10px 10px 30px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.recipe_nutrition_label:last-child {
+  border-bottom: none;
+}
+
+.recipe_nutrition_label span:last-child {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+.attribution {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
