@@ -224,3 +224,19 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/** Mobile view */
+
+@media (max-width: 400px) {
+  .recipe_card {
+    overflow: hidden;
+    border-radius: 0;
+  }
+
+  .imgOmelette {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-top: -30px;
+    border-radius: 0;
+  }
+}
