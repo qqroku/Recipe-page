@@ -228,6 +228,10 @@ body {
 /** Mobile view */
 
 @media (max-width: 400px) {
+  body {
+    padding: 0 0 10px 0;
+  }
+
   .recipe_card {
     overflow: hidden;
     border-radius: 0;
