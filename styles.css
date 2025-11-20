@@ -239,4 +239,41 @@ body {
     margin-top: -30px;
     border-radius: 0;
   }
+
+  .recipe_title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .recipe_description {
+    font-size: 0.9rem;
+  }
+
+  /** prep time  */
+  .recipe_prepTime_card {
+    width: 100%;
+  }
+
+  .recipe_prepTime_card ul {
+    font-size: 1rem;
+  }
+
+  /** ingredients */
+  .recipe_ingredients_card ul {
+    font-size: 1rem;
+  }
+
+  /** instructions */
+  .recipe_instructions_card ol {
+    font-size: 0.85rem;
+  }
+
+  /** nutrition  */
+  .recipe_nutrition_card .recipe_nutrition_description {
+    font-size: 0.9rem;
+  }
+
+  .recipe_nutrition_title ~ div {
+    font-size: 0.95rem;
+  }
 }
